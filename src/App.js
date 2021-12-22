@@ -9,69 +9,32 @@ function App() {
 
 
 
-
-
+const [posts,setPosts]=useState([
+  {id:1,title:'Javascript',stack:"MERN Stack"},
+  {id:2,title:'Java',stack:"Spring"},
+  {id:3,title:'Python',stack:"Cyber"},
+  {id:4,title:'Php',stack:"MERN Stack"},
+  {id:5,title:'Django',stack:"Backend"},
+  {id:6,title:'Spring',stack:"MERN Goolang"},
+])
+//Massiv(Array bilan shunaqa yuboriladi)
   return (
     
      <React.Fragment className='app w-50 mx-auto'>
       <table className='table table-striped'>
        <TableHeader/>
-        <tbody>
+        <tbody >
+          {posts.map(post=>(
+            <TableItem post={post}/>
+          ))}
         {/* <TableItem title={"python"} stack={"Full-stack"}/> */}
-        <TableItem post={{
+        {/* <TableItem post={{
           id:1,
           title:"Java",
-          stack:"Spring,MVC, Architecture"}}/>
-        <TableItem post={{
-          id:2,
-          title:"Java",
-          stack:"Spring,MVC, Architecture"}}/>
-        <TableItem post={{
-          id:3,
-          title:"Java",
-          stack:"Spring,MVC, Architecture"}}/>
-        <TableItem post={{
-          id:4,
-          title:"Java",
-          stack:"Spring,MVC, Architecture"}}/>
-        <TableItem post={{
-          id:5,
-          title:"Java",
-          stack:"Spring,MVC, Architecture"}}/>
-        <TableItem post={{
-          id:6,
-          title:"Java",
-          stack:"Spring,MVC, Architecture"}}/>
-        <TableItem post={{
-          id:7,
-          title:"Java",
-          stack:"Spring,MVC, Architecture"}}/>
-        <TableItem post={{
-          id:8,
-          title:"Java",
-          stack:"Spring,MVC, Architecture"}}/>
-        <TableItem post={{
-          id:9,
-          title:"Java",
-          stack:"Spring,MVC, Architecture"}}/>
-        <TableItem post={{
-          id:10,
-          title:"Java",
-          stack:"Spring,MVC, Architecture"}}/>
-        <TableItem post={{
-          id:11,
-          title:"Java",
-          stack:"Spring,MVC, Architecture"}}/>
-        <TableItem post={{
-          id:12,
-          title:"Java",
-          stack:"Spring,MVC, Architecture"}}/>
-        <TableItem post={{
-          id:13,
-          title:"Java",
-          stack:"Spring,MVC, Architecture"}}/>
+          stack:"Spring,MVC, Architecture"}}/> */}
+      
         {/* <TableItem/>
-        <TableItem/>
+        <TableI tem/>
         <TableItem/>
         <TableItem/>
         <TableItem/>
