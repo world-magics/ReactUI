@@ -4,10 +4,10 @@ const TableHeader = () => {
     return (
         <thead>
           <tr>
-            <th>#</th>
-            <th>Programming Language</th>
-            <th>Stack</th>
-            <th>Actions</th>
+            <th className='px-2'>#</th>
+            <th className='px-5'>Programming Language</th>
+            <th className='px-5'>Stack</th>
+            <th className='px-5'>Actions</th>
           </tr>
         </thead>
     )

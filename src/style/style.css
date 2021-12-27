@@ -5,3 +5,39 @@
     padding: 20px;
     min-height: 60vh;
 }
+.remove-btn {
+    margin-right: 0.5rem;
+  }
+  
+  .item-enter {
+    transform: translateX(-350px);
+    -webkit-transform: translateX(-350px);
+    -moz-transform: translateX(-350px);
+    -ms-transform: translateX(-350px);
+    -o-transform: translateX(-350px);
+}
+  .item-enter-active {
+      transform: translateX(0px);
+      opacity: 1;
+      transition:all opacity 500ms ease-in;
+      -webkit-transition:all  opacity 500ms ease-in;
+      -moz-transition:all  opacity 500ms ease-in;
+      -ms-transition:all  opacity 500ms ease-in;
+      -o-transition:all  opacity 500ms ease-in;
+      -webkit-transform: translateX(0px);
+      -moz-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+      -o-transform: translateX(0px);
+}
+  .item-exit {
+    opacity: 1;
+  }
+  .item-exit-active {
+      transform: translateX(-350px);
+      transition: all opacity 500ms ease-in;
+      -webkit-transition: all opacity 500ms ease-in;
+      -moz-transition: all opacity 500ms ease-in;
+      -ms-transition: all opacity 500ms ease-in;
+      -o-transition: all opacity 500ms ease-in;
+}
+  
